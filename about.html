@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>About</title>
+<style>
+.para{
+  font-family: 'Varela Round', sans-serif;
+  color: rgb(235, 101, 53);
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  
+}
+  .about{
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 0px 25px;
+    grid-gap:20px;
+   
+}
+
+.about .about-two p{
+    color:white;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 250px;
+    padding-bottom: 60px;
+    text-align: justify;
+  
+}
+
+/*media query code*/
+@media only screen and (max-width:600px){
+
+
+  .about{
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 0px 25px;
+    grid-gap:20px;                                                                                                                                                                          ;
+}
+}
+.about .about-two p{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.footer{
+    padding: 30px 25px;
+    text-align: center;
+    background-color:#3b1a17;
+}
+.footer p{
+  color:white;
+    display: block;
+    font-size: 20px;
+}
+
+
+  </style>
+
+</head>
+<body style="background-image:url(images/about.jpg); background-repeat:no-repeat; background-attachment:fixed; background-size:100% 100%;">
+  <div  class="header">
+    <div class="logo">
+        <div class="music">
+        <ul><li class="brand"><img src="images/musi.jpg" alt="logo">Music </li></ul>
+        </div>
+        <span class="fa fa-bars"></span>
+    </div>    
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="albums.html">Albums</a>
+        <a href="videos.html">Videos</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+</div>
+</div>
+  <div class="para">
+<p>About us</p>  
+</div>
+ <div class="about">
+ 
+  <div class="about-two">
+      <p>Music is generally defined as the art of arranging sound to create some combination of form, harmony, melody, rhythm or otherwise expressive content. Exact definitions of music vary considerably around the world, though it is an aspect of all human societies, a cultural universal. While scholars agree that music is defined by a few specific elements, there is no consensus on their precise definitions. The creation of music is commonly divided into musical composition, musical improvisation, and musical performance, though the topic itself extends into academic disciplines, criticism, philosophy, and psychology. Music may be performed or improvised using a vast range of instruments, including the human voice.</p>
+
+  </div> 
+</div>
+<div class="footer">
+  <p> &copy;Sandhya Prajapati, All rights reserved.</p>
+</div>
+<script>
+  document.getElementsByClassName("fa")[0].addEventListener("click", function(){
+          document.getElementsByClassName("links")[0].classList.toggle
+          ("show-nav");
+  });
+  
+</script>
+</body>
+</html>
